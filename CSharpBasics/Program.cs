@@ -25,6 +25,26 @@ namespace CSharpBasics
             Console.WriteLine(answer);
 
         }
+        static double ShowSquareRoot(double i)
+        {
+            double answer=Math.Sqrt(i);
+            return answer;
+        
+        }
+
+
+        static long Multiply(int i, int j)
+        {
+            return Math.BigMul(i, j);
+            
+        }
+
+        static int FindMinNumberFromSequence(int no1, int no2)
+        {
+            return Math.Min(no1, no2);
+        }
+        
+
 
         static void Main(string[] args)
         {
@@ -60,8 +80,10 @@ namespace CSharpBasics
             //#endregion
 
             Program.Meth1(10, 20);
-
-
+            double a=Program.ShowSquareRoot(100);
+            Console.WriteLine(a);
+            Console.WriteLine(Program.Multiply(100, 2000));
+            Console.WriteLine(Program.FindMinNumberFromSequence(1000,8000));
 
             Console.Read();
 
