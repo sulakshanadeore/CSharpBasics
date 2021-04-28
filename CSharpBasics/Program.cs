@@ -14,11 +14,11 @@ namespace CSharpBasics
         //    name of parameter====args
 
 
-/// <summary>
-/// static method which doesnot require calling it using a object of class
-/// </summary>
-/// <param name="i"></param>
-/// <param name="j"></param>
+        /// <summary>
+        /// static method which doesnot require calling it using a object of class
+        /// </summary>
+        /// <param name="i"></param>
+        /// <param name="j"></param>
         static void Meth1(int i, int j)
         {
             int answer = i + j;
@@ -27,23 +27,43 @@ namespace CSharpBasics
         }
         static double ShowSquareRoot(double i)
         {
-            double answer=Math.Sqrt(i);
+            double answer = Math.Sqrt(i);
             return answer;
-        
+
         }
 
 
         static long Multiply(int i, int j)
         {
             return Math.BigMul(i, j);
-            
+
         }
 
         static int FindMinNumberFromSequence(int no1, int no2)
         {
             return Math.Min(no1, no2);
+
         }
-        
+
+        static int Division(int no, int dvisor,out int rem)
+        {
+            int quo;
+            if (dvisor != 0)
+            {
+                //ans= no / dvisor;
+                // rem = no % dvisor;
+                 quo =Math.DivRem(no, dvisor, out rem);
+            }
+            else
+            {
+                quo = 0;
+                rem = 0;
+            }
+            return rem;
+        }
+
+
+        //Math.Pow
 
 
         static void Main(string[] args)
@@ -84,6 +104,9 @@ namespace CSharpBasics
             Console.WriteLine(a);
             Console.WriteLine(Program.Multiply(100, 2000));
             Console.WriteLine(Program.FindMinNumberFromSequence(1000,8000));
+            int r;
+            Console.WriteLine("Division Answer= " +  Program.Division(10, 3,out r));
+            Console.WriteLine("Remainder=" + r);
 
             Console.Read();
 
