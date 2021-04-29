@@ -13,10 +13,15 @@ namespace HRLib
         private int _empid;
         public int EmployeeId
         {
-            set { _empid = value; }//Assigning value to variable
+            set {
+                _empid = value;
+
+            
+            }//Assigning value to variable
             get { return _empid; }//Returning value of the variable
         }
 
+        //ReadWrite Property
         private string _ename;
         public string EmployeeName
         {
@@ -24,12 +29,68 @@ namespace HRLib
             set { _ename = value; }
         }
 
+        //Read only property--- if no setter
+        private string _password="demo@123";
+
+        public string Password
+        {
+            get { return _password; }
+            private set { _password = value; }
+        }
+
+
+        //no getter---- writeonly
+        string _pwd;
+        public string NewPassword
+        {
+            set 
+            {
+                _pwd = value;
+                if (Password==_pwd)
+                {
+                    Console.WriteLine("Please change password.. U can't use this as your password");
+                }
+                else
+                {
+                    Password =_pwd;
+                    Console.WriteLine("Your new password  = " + Password);
+                }
+            }
+        }
+
+
+
+
+        //private setter property
+        private  double _netsal;
+
+        public  double NetSalary
+        {
+            get { return _netsal; }
+          private  set { _netsal = value; }
+        }
+
         private float _salary;
 
         public float Salary
         {
             get { return _salary; }
-            set { _salary = value; }
+            set {
+                _salary = value;
+                if (_salary >0 && _salary<=10000)
+                {
+                    NetSalary = _salary + (_salary * .10);
+                }
+                else if (_salary > 10001 && _salary < 20000)
+                {
+                    NetSalary = _salary + (_salary * .5);
+                }
+                else
+                {
+
+                    NetSalary = _salary;
+                }
+            }
         }
 
 
