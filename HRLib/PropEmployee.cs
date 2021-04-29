@@ -10,6 +10,30 @@ namespace HRLib
     {
         //smart methods---- properties
         //Variables are always private
+        public PropEmployee()
+        {
+
+        }
+
+        public PropEmployee(int empid,string ename)
+        {
+            this.EmployeeId = empid;
+            this.EmployeeName = ename;
+        }
+
+        public PropEmployee(PropEmployee mycopy)
+        {
+            this._empid = mycopy.EmployeeId;
+            this._ename = mycopy.EmployeeName;
+                
+        }
+        public void ShowValues()
+        {
+            Console.WriteLine(this._empid);
+            Console.WriteLine(this._ename);
+        }
+
+
         private int _empid;
         public int EmployeeId
         {

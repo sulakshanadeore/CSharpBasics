@@ -47,7 +47,7 @@ namespace HRApp
             //o.OrderNo = 13;
             //o.OrderDate = new DateTime(2021,04,29);
             //Console.WriteLine(o.OrderAmt);
-           
+
             //Orders o1 = new Orders(12, "Mobile Phone", 50000, 1);
             //o.OrderNo = 14;
             //o.OrderDate = new DateTime(2021, 04, 29);
@@ -56,12 +56,14 @@ namespace HRApp
             //Orders o2 = new Orders();
             //Console.WriteLine(o2.OrderAmt);
 
-            Orders o4 = new Orders(123, "Hard disk",10000f);
-                /* Polymorphism---- Overloading Constructors*/
+            //Orders o4 = new Orders(123, "Hard disk",10000f);
+            /* Polymorphism---- Overloading Constructors*/
             //Same  name but different number,type and sequence of arguments to the method--- function,void,constructor
+            //Orders o = new Orders();
 
-
-
+            PropEmployee e1 = new PropEmployee(3, "Praj");
+            PropEmployee e2 = new PropEmployee(e1);
+            e2.ShowValues();
 
 
 

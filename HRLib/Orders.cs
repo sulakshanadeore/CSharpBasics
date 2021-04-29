@@ -13,6 +13,12 @@ public  class Orders
         public DateTime OrderDate { get; set; }
         public double OrderAmt { get; set; }
 
+        static Orders()
+        {
+            Console.WriteLine("I am called");
+
+        }
+
         public Orders()
         {
             Console.WriteLine("Enter Productid");
@@ -72,6 +78,7 @@ public  class Orders
         }
 
 
+        
 
     }
 }
