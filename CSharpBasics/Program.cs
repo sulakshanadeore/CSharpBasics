@@ -19,57 +19,14 @@ namespace CSharpBasics
         /// </summary>
         /// <param name="i"></param>
         /// <param name="j"></param>
-        static void Meth1(int i, int j)
-        {
-            int answer = i + j;
-            Console.WriteLine(answer);
-
-        }
-        static double ShowSquareRoot(double i)
-        {
-            double answer = Math.Sqrt(i);
-            return answer;
-
-        }
-
-
-        static long Multiply(int i, int j)
-        {
-            return Math.BigMul(i, j);
-
-        }
-
-        static int FindMinNumberFromSequence(int no1, int no2)
-        {
-            return Math.Min(no1, no2);
-
-        }
-
-        static int Division(int no, int dvisor,out int rem)
-        {
-            int quo;
-            if (dvisor != 0)
-            {
-                //ans= no / dvisor;
-                // rem = no % dvisor;
-                 quo =Math.DivRem(no, dvisor, out rem);
-            }
-            else
-            {
-                quo = 0;
-                rem = 0;
-            }
-            return rem;
-        }
-
-
+        
         //Math.Pow
 
 
         static void Main(string[] args)
         {
             //main--- entry point of Program
-            //#region VariableDeclaration
+            #region VariableDeclaration
             //int i;
             //i = 10;
             //Console.WriteLine(i);
@@ -97,15 +54,16 @@ namespace CSharpBasics
             //Console.WriteLine(i);
             //Console.WriteLine(username);
             //Console.WriteLine(p1);
-            //#endregion
-
-            Program.Meth1(10, 20);
-            double a=Program.ShowSquareRoot(100);
+            #endregion
+            SecondProgram.staticVar += 10;
+            Console.WriteLine(SecondProgram.staticVar);
+            SecondProgram.Meth1(10, 20);
+            double a= SecondProgram.ShowSquareRoot(100);
             Console.WriteLine(a);
-            Console.WriteLine(Program.Multiply(100, 2000));
-            Console.WriteLine(Program.FindMinNumberFromSequence(1000,8000));
+            Console.WriteLine(SecondProgram.Multiply(100, 2000));
+            Console.WriteLine(SecondProgram.FindMinNumberFromSequence(1000,8000));
             int r;
-            Console.WriteLine("Division Answer= " +  Program.Division(10, 3,out r));
+            Console.WriteLine("Division Answer= " + SecondProgram.Division(10, 3,out r));
             Console.WriteLine("Remainder=" + r);
 
             Console.Read();

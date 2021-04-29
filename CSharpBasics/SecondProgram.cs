@@ -4,22 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace CSharpBasics
 {
-    public class Class1
+   class SecondProgram
     {
-        //Instance methods/members of the class
-        public  int staticVar = 100;
-        public  void Meth1(int i, int j)
+       public static int staticVar = 100;
+        public static void Meth1(int i, int j)
         {
-
+         
             int answer = i + j;
             Console.WriteLine(answer);
             staticVar += 10;
             Console.WriteLine(staticVar);
 
         }
-        public  double ShowSquareRoot(double i)
+        public static double ShowSquareRoot(double i)
         {
             double answer = Math.Sqrt(i);
             return answer;
@@ -27,19 +26,19 @@ namespace ClassLibrary1
         }
 
 
-        public  long Multiply(int i, int j)
+        public static long Multiply(int i, int j)
         {
             return Math.BigMul(i, j);
 
         }
 
-        public int FindMinNumberFromSequence(int no1, int no2)
+        public static int FindMinNumberFromSequence(int no1, int no2)
         {
             return Math.Min(no1, no2);
 
         }
 
-        public  int Division(int no, int dvisor, out int rem)
+        public static int Division(int no, int dvisor, out int rem)
         {
             int quo;
             if (dvisor != 0)
@@ -55,7 +54,6 @@ namespace ClassLibrary1
             }
             return rem;
         }
-
 
 
     }
