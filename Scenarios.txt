@@ -1,0 +1,63 @@
+
+Amazon/FP
+Payment
+ 
+Pay----BHIM UPI------UPIid,Amt,UPI Pin,OTP
+Pay----Net Banking----Amt,OTP,CustomerPassword,BankName
+Pay--- Debit/Credit Card------CardNo,ExpDate,CVV,BankName,Amt,OTP
+Pay-----COD------
+Pay----Paytm-----PaytmAcno,PIN,amt
+Pay----Gpay-------Acno,PIN,Amt,loginid
+Pay-----QRCode-----UPIPin,Amt
+
+-----------------------------------------
+
+OverRiding
+
+	1) there must be a parent class & child Class
+Current Example: 	   CustomerPayment & Student
+
+	ie Student:Customer Payment
+
+CustomerPayment
+{
+    void Pay(int,float,double,string){}
+} 
+
+Student:CustomerPayment
+{
+   void Pay(int,float,double,string){}
+}
+
+
+2 scenarios----- 
+1)  hide------ child----- Student
+
+Student:CustomerPayment
+{
+ void new Pay(int,float,double,string){}
+      ====
+}
+-------------------------------------------------------
+2) 
+Extra functionality
+
+CustomerPayment
+{
+    void virtual Pay(int,float,double,string){}
+	 =======
+}
+
+Student:CustomerPayment
+{
+    void override Pay(int,float,double,string){}
+         ========
+
+}
+
+donot hide----- 
+
+
+
+
+
