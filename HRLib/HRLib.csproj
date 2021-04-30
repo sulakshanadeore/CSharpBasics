@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonGeo.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="CustomerPayment.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Interface1.cs" />

@@ -16,27 +16,37 @@ namespace HRApp
             //admission.Amt = 1000d;
             //admission.OwnMethod();
 
-            IRCTCBooking booking = new IRCTCBooking();
-            bool status = booking.PaybyCard(234324, new DateTime(2020, 3, 3),344,"HRDF",2333d,333);
-            if (!status)
-            {
-                Console.WriteLine("Booking failed!!");
-            }
-            else
-            {
-                Console.WriteLine("Booking successful!!!");
-            }
-            Console.WriteLine("-------------Shopkeeper continues--------------");
-            ShopKeeper shop = new ShopKeeper();
-            status=shop.PaybyCard(234324, new DateTime(2020, 3, 3), 344, "HRDF", 100d, 333);
-            if (!status)
-            {
-                Console.WriteLine("Booking failed!!");
-            }
-            else
-            {
-                Console.WriteLine("Booking successful!!!");
-            }
+            //IRCTCBooking booking = new IRCTCBooking();
+            //bool status = booking.PaybyCard(234324, new DateTime(2020, 3, 3),344,"HRDF",2333d,333);
+            //if (!status)
+            //{
+            //    Console.WriteLine("Booking failed!!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Booking successful!!!");
+            //}
+            //Console.WriteLine("-------------Shopkeeper continues--------------");
+            //ShopKeeper shop = new ShopKeeper();
+            //status=shop.PaybyCard(234324, new DateTime(2020, 3, 3), 344, "HRDF", 100d, 333);
+            //if (!status)
+            //{
+            //    Console.WriteLine("Booking failed!!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Booking successful!!!");
+            //}
+
+            Customer c = new Customer(123);
+
+
+            //InternationalCsutomer ic = new InternationalCsutomer();
+
+
+            //InternationalCsutomer ic1 = new InternationalCsutomer(123);
+
+
             Console.Read();
         }
     }
