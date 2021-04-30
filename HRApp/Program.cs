@@ -61,13 +61,47 @@ namespace HRApp
             //Same  name but different number,type and sequence of arguments to the method--- function,void,constructor
             //Orders o = new Orders();
 
-            PropEmployee e1 = new PropEmployee(3, "Praj");
-            PropEmployee e2 = new PropEmployee(e1);
-            e2.ShowValues();
+            //PropEmployee e1 = new PropEmployee(3, "Praj");
+            //PropEmployee e2 = new PropEmployee(e1);
+            //e2.ShowValues();
+
+            //Employee emp = new Employee();
+            //emp.CalculateSalary(20000,4.5);
+            // CustomerPayment payment = new CustomerPayment();
+            // Console.WriteLine("Enter Payment Mode");
+            //PaymentMode p = (PaymentMode)Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("You have selected the payment mode  " + p);
+
+            // switch (p)
+            // {
+            //     case PaymentMode.BhimUPi:
+            //         long UPIid=234324; 
+            //         double Amt=32444d;
+            //         int UPIPin=3243; 
+            //         int OTP=434;
+
+            //         payment.Pay(UPIid, Amt, UPIPin, OTP);
+            //         break;
+            //     case PaymentMode.NetBanking:
+
+            //         break;
+            //     case PaymentMode.CardPayment:
+            //         break;
+            //     case PaymentMode.Paytm:
+            //         break;
+            //     case PaymentMode.COD:
+            //         break;
+            //     case PaymentMode.Gpay:
+            //         break;
+            //     case PaymentMode.QR:
+            //         break;
+            //     default:
+            //         break;
+            // }
 
 
-
-
+            Student student = new Student();
+            
             Console.Read();
         }
     }
