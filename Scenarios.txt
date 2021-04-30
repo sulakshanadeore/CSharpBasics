@@ -1,0 +1,119 @@
+
+Amazon/FP
+Payment
+ 
+Pay----BHIM UPI------UPIid,Amt,UPI Pin,OTP
+Pay----Net Banking----Amt,OTP,CustomerPassword,BankName
+Pay--- Debit/Credit Card------CardNo,ExpDate,CVV,BankName,Amt,OTP
+Pay-----COD------
+Pay----Paytm-----PaytmAcno,PIN,amt
+Pay----Gpay-------Acno,PIN,Amt,loginid
+Pay-----QRCode-----UPIPin,Amt
+
+-----------------------------------------
+Inheritance:
+
+Inherit (:) ----- reusability
+2 types of inheritance
+a)Multiple----
+==========
+Multiple Inheritance is not supported by C#,
+but it may be implemented using Interfaces.
+U may inherit multiple interfaces in  a single class.
+But not multiple classes
+XXX(class)   Student
+interface Student
+  {
+   4 functions
+  }
+
+xxxx(class) collegeStudent
+interface CollegeStudent
+{
+   2 functions
+
+}
+class UniversityStudent:Student,CollegeStudent
+{
+   5 functions
+}
+
+
+
+
+
+
+B)Multi-Level
+==============
+
+   Student
+  {
+   4 functions
+  }
+
+collegeStudent:Student///6 functions
+{
+   2 functions
+
+}
+UniversityStudent:CollegeStudnet///11 functions
+{
+   5 functions
+}
+
+Overloading  & OverRiding
+
+
+
+
+
+-------------------------------------------
+OverRiding
+
+	1) there must be a parent class & child Class
+Current Example: 	   CustomerPayment & Student
+
+	ie Student:Customer Payment
+
+CustomerPayment
+{
+    void Pay(int,float,double,string){}
+} 
+
+Student:CustomerPayment
+{
+   void Pay(int,float,double,string){}
+}
+
+
+2 scenarios----- 
+1)  hide------ child----- Student
+
+Student:CustomerPayment
+{
+ void new Pay(int,float,double,string){}
+      ====
+}
+-------------------------------------------------------
+2) 
+Extra functionality
+
+CustomerPayment
+{
+    void virtual Pay(int,float,double,string){}
+	 =======
+}
+
+Student:CustomerPayment
+{
+    void override Pay(int,float,double,string){}
+         ========
+
+}
+
+donot hide----- 
+
+
+
+
+
