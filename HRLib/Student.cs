@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace HRLib
 {
+    interface IInterface
+    {
+
+    }
+
+
+
   public  class Student:CustomerPayment
     {
-        public new void Pay(long Acno, int PIN, double Amt, string loginid)
-        {
-            //not using base class functionality
-            //own functionality
-            Console.WriteLine("Enter stud no");
-            Console.WriteLine("Enter class");
-            Console.WriteLine("Enter loc");
+        //public new void Pay(long Acno, int PIN, double Amt, string loginid)
+        //{
+        //    //not using base class functionality
+        //    //own functionality
+        //    Console.WriteLine("Enter stud no");
+        //    Console.WriteLine("Enter class");
+        //    Console.WriteLine("Enter loc");
 
-        }
+        //}
 
         public void StudentDetails()
         {

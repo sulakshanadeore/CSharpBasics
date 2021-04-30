@@ -67,41 +67,45 @@ namespace HRApp
 
             //Employee emp = new Employee();
             //emp.CalculateSalary(20000,4.5);
-            // CustomerPayment payment = new CustomerPayment();
-            // Console.WriteLine("Enter Payment Mode");
-            //PaymentMode p = (PaymentMode)Convert.ToInt32(Console.ReadLine());
-            // Console.WriteLine("You have selected the payment mode  " + p);
+             CustomerPayment payment = new CustomerPayment();
+             Console.WriteLine("Enter Payment Mode");
+            PaymentMode p = (PaymentMode)Convert.ToInt32(Console.ReadLine());
+           Console.WriteLine("You have selected the payment mode  " + p);
 
-            // switch (p)
-            // {
-            //     case PaymentMode.BhimUPi:
-            //         long UPIid=234324; 
-            //         double Amt=32444d;
-            //         int UPIPin=3243; 
-            //         int OTP=434;
+            switch (p)
+            {
+                case PaymentMode.BhimUPi:
+                    long UPIid = 234324;
+                    Console.WriteLine("Enter Amt");
+                    double Amt = Convert.ToDouble(Console.ReadLine());
 
-            //         payment.Pay(UPIid, Amt, UPIPin, OTP);
-            //         break;
-            //     case PaymentMode.NetBanking:
+                    payment.Amt = Amt;
+                    int UPIPin = 3243;
+                    int OTP = 434;
 
-            //         break;
-            //     case PaymentMode.CardPayment:
-            //         break;
-            //     case PaymentMode.Paytm:
-            //         break;
-            //     case PaymentMode.COD:
-            //         break;
-            //     case PaymentMode.Gpay:
-            //         break;
-            //     case PaymentMode.QR:
-            //         break;
-            //     default:
-            //         break;
-            // }
+                    payment.Pay(UPIid, Amt, UPIPin, OTP);
+                    payment.CustomerDetails();
+                    break;
+                case PaymentMode.NetBanking:
+
+                    break;
+                case PaymentMode.CardPayment:
+                    break;
+                case PaymentMode.Paytm:
+                    break;
+                case PaymentMode.COD:
+                    break;
+                case PaymentMode.Gpay:
+                    break;
+                case PaymentMode.QR:
+                    break;
+                default:
+                    break;
+            }
 
 
-            Student student = new Student();
-            
+            //Student student = new Student();
+
             Console.Read();
         }
     }

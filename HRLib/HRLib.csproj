@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="CustomerPayment.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Interface1.cs" />
+    <Compile Include="IPaymentModes.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="PropEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
