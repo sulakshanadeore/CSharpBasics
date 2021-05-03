@@ -24,6 +24,7 @@ namespace ArraysDeno
                 emp[i].DepartmentNo= Convert.ToInt32(Console.ReadLine());
              }
 
+            
             Console.WriteLine("Printing");
             foreach (var item in emp)
             {
