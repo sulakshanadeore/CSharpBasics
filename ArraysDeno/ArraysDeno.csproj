@@ -33,9 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ArraysDeno.JaggedArray</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HRLib">
+      <HintPath>..\HRLib\bin\Debug\HRLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassArrayDemo.cs" />
     <Compile Include="JaggedArray.cs" />
     <Compile Include="MultiDimensionalArrayDemo.cs" />
     <Compile Include="Program.cs" />

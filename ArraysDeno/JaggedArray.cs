@@ -10,7 +10,11 @@ namespace ArraysDeno
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
+            //Jagged/ragged Array-- rows fixed but elements in each row different-- array of arrays
+=======
             //Jagged/ragged Array-- rows fixed but elements in each row different
+>>>>>>> a752de9ed154892bd5088711cf51e6e190f0be60
 
             int[][] jagged = new int[2][];
             jagged[0] = new int[4] { 1, 2, 3, 4 };
