@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CollectionsDemo.GenericsDemos</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HRLib">
       <HintPath>..\HRLib\bin\Debug\HRLib.dll</HintPath>
@@ -46,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericsDemos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
