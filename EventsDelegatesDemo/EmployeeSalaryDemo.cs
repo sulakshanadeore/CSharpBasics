@@ -8,6 +8,7 @@ namespace EventsDelegatesDemo
 {
     class EmployeeSalaryDemo
     {
+        static event DoAllCalculations EmpShowCalculations;
         static void Main(string[] args)
         {
             Employee emp = new Employee();
@@ -19,10 +20,13 @@ namespace EventsDelegatesDemo
             DoAllCalculations cal=(DoAllCalculations)MulticastDelegate.Combine(obj1, obj2);
             Console.WriteLine("enter basic salary");
             int bs = Convert.ToInt32(Console.ReadLine());
-            cal(bs);
+            //cal(bs);
+            //Console.WriteLine("Gross Salary" + emp.GrossSalary);
+            //Console.WriteLine("Net Salary" + emp.NetSalary);
+            EmpShowCalculations += cal;
+            EmpShowCalculations(bs);
             Console.WriteLine("Gross Salary" + emp.GrossSalary);
             Console.WriteLine("Net Salary" + emp.NetSalary);
-
             Console.ReadLine();
 
 
