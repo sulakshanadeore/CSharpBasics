@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>EventsDelegatesDemo.LambdaDemo</StartupObject>
+    <StartupObject>EventsDelegatesDemo.ExtensionMethodDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,9 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDemo.cs" />
     <Compile Include="AnonymousDemo.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeSalaryDemo.cs" />
+    <Compile Include="ExtensionMethodDemo.cs" />
+    <Compile Include="FuncLambda.cs" />
     <Compile Include="LambdaDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

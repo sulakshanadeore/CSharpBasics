@@ -10,6 +10,8 @@ namespace EventsDelegatesDemo
 
     public class Employee
     {
+        public int Empid { get; set; }
+        public string Empname { get; set; }
 
         public double GrossSalary { get; set; }
         public double NetSalary { get; set; }
