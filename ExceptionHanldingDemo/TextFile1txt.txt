@@ -1,0 +1,31 @@
+﻿
+Exception Handling
+
+    Exception : 
+
+        Divide Number: 
+            valid input--- valid output
+
+            -12/-2--------valid input
+
+            3424/0----- invalid input---- 
+               exceptionally
+               very rarely---- Divide by zero Exception
+              ( Enter number int)------ jgsjdkhjs
+    Input string not in correct format---- Format Exception
+
+              ( Enter number int)------ 2424242423424
+    OverflowException
+    ---------------------------------
+
+Exception--- System
+
+Base of all exceptions
+1) System Exceptions------- 
+a) DivideByZeroException 
+b) FileNotFoundException
+c) FormatException
+
+-------------------------------------------------
+
+2) Application Exceptions

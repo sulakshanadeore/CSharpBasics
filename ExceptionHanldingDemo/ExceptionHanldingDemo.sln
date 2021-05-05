@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHanldingDemo", "ExceptionHanldingDemo.csproj", "{ECA19463-E437-4674-81D9-3FDBC1F3BCB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary2", "..\ClassLibrary2\ClassLibrary2.csproj", "{777CDD39-4207-4A7F-B914-4CF1D60C4F39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECA19463-E437-4674-81D9-3FDBC1F3BCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA19463-E437-4674-81D9-3FDBC1F3BCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA19463-E437-4674-81D9-3FDBC1F3BCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA19463-E437-4674-81D9-3FDBC1F3BCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{777CDD39-4207-4A7F-B914-4CF1D60C4F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777CDD39-4207-4A7F-B914-4CF1D60C4F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777CDD39-4207-4A7F-B914-4CF1D60C4F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777CDD39-4207-4A7F-B914-4CF1D60C4F39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {701E63A1-694A-4B22-98CA-CC328DD53DAC}
+	EndGlobalSection
+EndGlobal
