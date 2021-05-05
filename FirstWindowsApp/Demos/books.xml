@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <title>C# Basics</title>
+  <price>123</price>
+  <year>2021</year>
+  <!--this is a good book-->
+</book>
