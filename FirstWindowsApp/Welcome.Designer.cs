@@ -30,18 +30,21 @@ namespace FirstWindowsApp
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.filesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.directoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.drivesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binaryFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xMLFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generalMethodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.directoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.drivesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jSONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,22 +62,12 @@ namespace FirstWindowsApp
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Info";
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.Location = new System.Drawing.Point(62, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(75, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
@@ -85,12 +78,22 @@ namespace FirstWindowsApp
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
-            // textBox1
+            // comboBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(62, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -116,23 +119,11 @@ namespace FirstWindowsApp
             this.filesToolStripMenuItem.Text = "&Files";
             this.filesToolStripMenuItem.Click += new System.EventHandler(this.filesToolStripMenuItem_Click);
             // 
-            // directoriesToolStripMenuItem
-            // 
-            this.directoriesToolStripMenuItem.Name = "directoriesToolStripMenuItem";
-            this.directoriesToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.directoriesToolStripMenuItem.Text = "Directories";
-            // 
-            // drivesToolStripMenuItem
-            // 
-            this.drivesToolStripMenuItem.Name = "drivesToolStripMenuItem";
-            this.drivesToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.drivesToolStripMenuItem.Text = "Drives";
-            // 
             // binaryFilesToolStripMenuItem
             // 
             this.binaryFilesToolStripMenuItem.Name = "binaryFilesToolStripMenuItem";
             this.binaryFilesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.binaryFilesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.binaryFilesToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.binaryFilesToolStripMenuItem.Text = "&Binary Files";
             this.binaryFilesToolStripMenuItem.Click += new System.EventHandler(this.binaryFilesToolStripMenuItem_Click);
             // 
@@ -140,7 +131,7 @@ namespace FirstWindowsApp
             // 
             this.textFilesToolStripMenuItem.Name = "textFilesToolStripMenuItem";
             this.textFilesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.textFilesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.textFilesToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.textFilesToolStripMenuItem.Text = "&Text Files";
             this.textFilesToolStripMenuItem.Click += new System.EventHandler(this.textFilesToolStripMenuItem_Click);
             // 
@@ -148,7 +139,7 @@ namespace FirstWindowsApp
             // 
             this.xMLFilesToolStripMenuItem.Name = "xMLFilesToolStripMenuItem";
             this.xMLFilesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.xMLFilesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.xMLFilesToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.xMLFilesToolStripMenuItem.Text = "X&ML Files";
             this.xMLFilesToolStripMenuItem.Click += new System.EventHandler(this.xMLFilesToolStripMenuItem_Click);
             // 
@@ -159,6 +150,45 @@ namespace FirstWindowsApp
             this.generalMethodsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.generalMethodsToolStripMenuItem.Text = "General&Methods";
             this.generalMethodsToolStripMenuItem.Click += new System.EventHandler(this.generalMethodsToolStripMenuItem_Click);
+            // 
+            // directoriesToolStripMenuItem
+            // 
+            this.directoriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.binaryToolStripMenuItem,
+            this.xMLToolStripMenuItem,
+            this.jSONToolStripMenuItem});
+            this.directoriesToolStripMenuItem.Name = "directoriesToolStripMenuItem";
+            this.directoriesToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.directoriesToolStripMenuItem.Text = "Serialization";
+            this.directoriesToolStripMenuItem.Click += new System.EventHandler(this.directoriesToolStripMenuItem_Click);
+            // 
+            // drivesToolStripMenuItem
+            // 
+            this.drivesToolStripMenuItem.Name = "drivesToolStripMenuItem";
+            this.drivesToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.drivesToolStripMenuItem.Text = "Drives";
+            this.drivesToolStripMenuItem.Click += new System.EventHandler(this.drivesToolStripMenuItem_Click);
+            // 
+            // binaryToolStripMenuItem
+            // 
+            this.binaryToolStripMenuItem.Name = "binaryToolStripMenuItem";
+            this.binaryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.binaryToolStripMenuItem.Text = "Binary";
+            this.binaryToolStripMenuItem.Click += new System.EventHandler(this.binaryToolStripMenuItem_Click);
+            // 
+            // xMLToolStripMenuItem
+            // 
+            this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
+            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xMLToolStripMenuItem.Text = "XML";
+            this.xMLToolStripMenuItem.Click += new System.EventHandler(this.xMLToolStripMenuItem_Click);
+            // 
+            // jSONToolStripMenuItem
+            // 
+            this.jSONToolStripMenuItem.Name = "jSONToolStripMenuItem";
+            this.jSONToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jSONToolStripMenuItem.Text = "JSON";
+            this.jSONToolStripMenuItem.Click += new System.EventHandler(this.jSONToolStripMenuItem_Click);
             // 
             // frmWelcome
             // 
@@ -200,6 +230,9 @@ namespace FirstWindowsApp
         private System.Windows.Forms.ToolStripMenuItem directoriesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem drivesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generalMethodsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem binaryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xMLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jSONToolStripMenuItem;
     }
 }
 

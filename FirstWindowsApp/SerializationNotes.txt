@@ -1,0 +1,14 @@
+﻿Seriliazation
+
+
+Persisting the state of an object-------File,Memory,DB
+reading it back when required------File,Memory,DB
+
+Write object data--to file,Memory,DB--Serialization
+Read object data--to file,Memory,DB---Deserialization
+
+Types
+1) Binary ------ safe
+2) XML------ safe, easily usable across languages---- open source
+3) Json---- JavaScript object notation---
+

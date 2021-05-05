@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Custid>345</Custid>
+  <Custname>Harish</Custname>
+  <Amt>4000</Amt>
+  <Points>20</Points>
+</Customer>

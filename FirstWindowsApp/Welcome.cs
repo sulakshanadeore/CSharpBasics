@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace FirstWindowsApp
 {
     public partial class frmWelcome : Form
@@ -62,6 +62,42 @@ namespace FirstWindowsApp
         private void filesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void directoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void drivesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DriveInfo info = new DriveInfo("C");
+            DirectoryInfo dirinfo=info.RootDirectory;
+            MessageBox.Show(dirinfo.ToString());
+            string driveformat=info.DriveFormat;
+            MessageBox.Show(driveformat);
+            MessageBox.Show(info.AvailableFreeSpace.ToString());
+
+            MessageBox.Show(info.TotalFreeSpace.ToString());
+
+        }
+
+        private void binaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BinarySerDemo bs = new BinarySerDemo();
+            bs.Show();
+        }
+
+        private void xMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XMLSer xs = new XMLSer();
+            xs.Show();
+        }
+
+        private void jSONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JSonSer jdemo = new JSonSer();
+            jdemo.Show();
         }
     }
 }
