@@ -1,0 +1,60 @@
+1) Create Login Class with Userid,Password, Confirm Password as Properties.
+Also a ValidatePassword Method must be present to check both the passwords match.
+
+2)Maintain the employees’ information like name, father name, age, salary, designation, skills, education, etc in a class.
+Also maintain a method to accept and display all the details.
+Use appropriate Access Specifiers.
+
+
+3) Create appropriate classes with required oops concepts for the following:
+Create groups of 4-5 people each and complete this.
+
+The customer comes and provides prescription paper to the pharmacy staff. The concerned member search for the required medicine(s) in computer and note the location of that particular medicine(s).
+ 
+The staff member picks the medicine(s) from the rack and gives the medicine(s) in a basket to the admin. The admin makes the entry of medicine(s) in the computer for calculating prices that are stored in the database.
+
+The system automatically calculates the bill against the medicine(s) entered by admin. The admin tells the total amount of the required medicine(s).
+
+The customer pays the bill. The admin takes the print of the bill and provides the receipt to the customer. The system then balances the record of the remaining quantity of sold medicine(s).
+
+In case a particular customer returns the medicine(s), the medicine quantity should be brought to the previous state as before.
+
+Upon return, the total quantity of the same medicine should be updated and the amount should be deducted from the total money of sales according to the returned quantity.
+
+Functional Requirements:
+
+Some common functional requirements are:
+Mainform
+-------
+Admin Login---AdminMenuForm -- background -red
+-------
+userid:admin
+pwd:123
+Menu to be shown:
+---------------------
+PrintReceipt
+ShowAllCustomers
+
+Staff Login 
+--------
+Staff Menu Form---- green---
+userid: staff
+pwd: 102030
+Menu to be shown:
+----------------------
+Make Invoice
+List MEdicines
+
+
+User-friendly interfaces
+Interfaces validation check for entry, update, delete, search, etc.
+Medicine(s) record entry, update, delete
+Track all information about the medicine(s), inventory, pharmacy
+Shows information and descriptions of pharmacy, stocks.
+Bill calculation.
+Record updating in case medicine(s) sold, returned
+Total Cost of all medicines
+Calculate total profit
+Deduct amount from total sales if the customer returns medicine(s)
+Updating quantities of medicine(s) in case of populating pharmacy with medicines.
+Report generation.
