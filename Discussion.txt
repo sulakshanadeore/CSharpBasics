@@ -1,0 +1,204 @@
+
+Delegates---- 
+How to declare event with delegate
+public   eventHandler event Strike;
+
+--------------------------------------
+1)new ThreadStart(doSomething());
+2)new threadStart(doSomething);-----answer
+3)new ThreadStart(this);
+4)new ThreadStart(Threadname);
+5)new ThreadStart()
+-------------------------------------------
+try
+{
+int i,j;
+i=100;
+j=10;
+
+	try
+	{
+		
+		int ans=i/j;
+		
+	}
+	catch(DivideByZeroException ex)
+	{
+
+	}
+
+}
+catch(Exception ex)
+{
+
+}
+finally
+{
+cw(Finally called);
+}
+
+1)compile time exception
+2) dividebyzero exception and finally will be fired
+3) only finally
+4) dividebyzero
+
+------------------------------------
+either catch/finally is compulsory
+
+
+----------------------------------------------
+ArrayList intlist=new ArrayList();
+list.addRange(new int[]{1,2,3,4,5}];
+int[] arrint=list.ToArray(typeof(int)) as int[];
+1.) some of elements get modified
+2.) no elements gets modified
+3.) Resizing of list
+4) No elments will be added or deleted because copy is created
+
+
+------------------------------------
+
+
+
+
+
+--------
+Difference between Pop & Peek
+--------------------------------
+SOAP & XML Serialization 
+1)both are binded  same envelope---answer
+2)XML accepts only public  objects
+3) SOAP only accepts public 
+4) Both donot accept the public objects
+---------------------------------------------
+character of an instance method?
+1) instance methods can access on both static and non static variables.----- answer
+2) instance methods  can be access on static and cannot be called on non static variables.. 
+3) instance methods can access on non static and cannot be called on static variables..
+4) instance methods access be called on both static and non static variables.
+--------------------------
+which is specifier that Controls binding?
+1)BindingFlags--------answer
+2)Type 
+3)CultureInfo
+4)None ofthe above
+------------------------------------------
+
+interface I1
+{
+
+    void m1();
+  
+}
+interface I2
+{
+
+	void  m2();
+  
+}
+
+
+class Sample:I1,I2
+{
+     void m1()
+    {
+     i++;
+     
+    }
+     
+   public static void main(str[] args)
+    {  
+ sample r =new sample();
+       i = 0; 
+     
+      r.m1();
+      r.m2();
+    }
+}
+1.compile time error-----m2 not I2----answer
+2.compilation success-----
+3) i=1
+4) i=2
+
+
+
+
+------------------------------------------------
+In memory, where c# arrays are created---- answer ---- heap
+--------------------------------------------
+
+How can we identify that a property reflected is readonly or not?
+----------------------------------------------------------------------------
+which location garbage collector remove objects?
+1) hashtable
+2) heap 
+3) Stack
+4) Managed heap-------answer
+-------------------------
+Generation 0
+============================
+difference between removeAt() and remove()
+1.) remove only accepts object type and removeAt() accepts object type only
+2.) remove only accepts object type and removeAt() accepts value type only
+3.) remove only accepts object type and removeAt() not accepts value type only
+4)remove only accepts object type and removeAt() accepts int only--------answer
+------------------------------------------------------
+every element in linkedlist is a type c#
+---------------------------------------------------------------
+
+dynamic i= 123;
+cw(i);
+dynamic i="mphasis"
+cw(i);
+1. compile time error----- answer
+2. no compile error runs smoothly
+
+-----------------------------------
+what is the keyword is used to inherit the properties from base class to derived class
+1.parent
+2.base
+-------------------------
+which modifier enables to hide the compiler warning when a base class method and derived class method have same name-----answer---new
+---------------------------------------------
+public delegate int mathDelegate(int i)
+mathDelegate del=x=>
+{
+x+=5;
+x=x*20;
+x++;
+};
+
+del(10);
+
+1)compile error return expected----answer
+2)..
+--------------------------------------
+Logical & Physical boundry created 
+Assembly---- answer
+
+
+----------------------------------------------------------
+
+which property or method will give you the name of the appication or the object that causes the error form the exception object ?
+1. message
+2. GetError()
+3. Source-----------------answer
+4. TargetSite
+---------------------------------------------------
+
+Every Element in a Linked LIst is a type of?
+     ----object------------------------answer
+     -----linked list node
+     ------linked list item
+------------node list
+
+
+
+
+
+
+
+
+
+
+
